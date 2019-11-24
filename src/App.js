@@ -246,7 +246,7 @@ export default class App extends Component {
                             <div>
                                 <div>
                                     <p>B A O</p>
-                                    <p>ReactJS, Angular 7</p>
+                                    <p>Los Angeles</p>
                                     <p>Full Stack Developer</p>
                                     <Bounce className='bouncing'>V</Bounce>
                                 </div>
@@ -295,7 +295,7 @@ export default class App extends Component {
                                                 <div>
                                                     <div>
                                                         <p>Online Check In</p>
-                                                        <p>Angular 5, Typescript, Express, Blackbaud Luminate</p>
+                                                        <p>Angular 6, Typescript, Express, Blackbaud Luminate</p>
                                                         <p>
                                                             <a href="https://secure.conquercancer.ca/va19_dev/index.html#/step-01">Link</a>
                                                         </p>
