@@ -11,6 +11,8 @@ import imageD from './assets/imageD.png';
 import imageE from './assets/imageE.png';
 import imageF from './assets/imageF.png';
 
+import resume from './assets/Baokhoa_Resume.pdf'
+
 
 const bounceAction = keyframes`${bounce}`;
 
@@ -369,17 +371,16 @@ export default class App extends Component {
                                         <a href="https://www.facebook.com/baokhoa.vu">
                                             Facebook
                                         </a>
-                                        {/* <a href="#">
-                                            A
-                                        </a> */}
                                     </p>
                                     <p>
                                         <a href="https://www.linkedin.com/in/baokhoadvu/">
                                             Linkedin
                                         </a>
-                                        {/* <a href="#">
-                                            A
-                                        </a> */}
+                                    </p>
+                                    <p>
+                                        <a href={resume}>
+                                            Resume
+                                        </a>
                                     </p>
                                 </div>
                             </div>
