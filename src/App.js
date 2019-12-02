@@ -287,7 +287,7 @@ export default class App extends Component {
                                                     <div>
                                                         {/* <p>Poo</p> */}
                                                         <p>Ride To Conquer Cancer Toronto</p>
-                                                        <p>ReactJS, Blackbaud Luminate</p>
+                                                        <p>ReactJS, Styled Components, Blackbaud Luminate</p>
                                                         <p>
                                                             <a href="https://secure.conquercancer.ca/devReactBao">Link</a>
                                                         </p>
