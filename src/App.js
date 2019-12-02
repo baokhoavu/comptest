@@ -127,7 +127,7 @@ const Scrollable = styled.div`
         display: inline-block;
         width: 35%;
         position: relative;
-        bottom: 280px;
+        bottom: 230px;
         // padding: 12.5%;
     }
 
@@ -274,7 +274,7 @@ export default class App extends Component {
                                             <div>
                                                 <div>
                                                     <div>
-                                                        <Image className="f"></Image>
+                                                        <Image className="a"></Image>
                                                     </div>
                                                 </div>
                                                 <div>
