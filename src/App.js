@@ -256,9 +256,9 @@ export default class App extends Component {
                         <Box className="first whole">
                             <div>
                                 <div>
-                                    {/* <p>B A O</p>
+                                    <p>B A O</p>
                                     <p>Los Angeles</p>
-                                    <p>Full Stack Developer</p> */}
+                                    <p>Full Stack Developer</p>
                                     <Bounce className='bouncing'>V</Bounce>
                                 </div>
                             </div>
@@ -279,9 +279,9 @@ export default class App extends Component {
                                                 </div>
                                                 <div>
                                                     <div>
-                                                        <p>Poo</p>
-                                                        {/* <p>Ride To Conquer Cancer Toronto</p>
-                                                        <p>ReactJS, Blackbaud Luminate</p> */}
+                                                        {/* <p>Poo</p> */}
+                                                        <p>Ride To Conquer Cancer Toronto</p>
+                                                        <p>ReactJS, Blackbaud Luminate</p>
                                                         <p>
                                                             <a href="https://secure.conquercancer.ca/devReactBao">Link</a>
                                                         </p>
@@ -368,9 +368,9 @@ export default class App extends Component {
                                                 </div>
                                                 <div>
                                                     <div>
-                                                        <p>Poo</p>
-                                                        {/* <p>Ride To Conquer Cancer Vancouver</p>
-                                                        <p>Wordpress, jQuery, Blackbaud Luminate</p> */}
+                                                        {/* <p>Poo</p> */}
+                                                        <p>Ride To Conquer Cancer Vancouver</p>
+                                                        <p>Wordpress, jQuery, Blackbaud Luminate</p>
                                                         <p>
                                                             <a href="https://secure.conquercancer.ca/vancouver20">Link</a>
                                                         </p>
