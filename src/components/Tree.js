@@ -46,7 +46,6 @@ const Tree = styled.div`
 
 const Diamond = styled.div`
     position: absolute;
-    // top: 45%;
     left: 2.5%;
     padding: 150px;
     transform: rotate(45deg);

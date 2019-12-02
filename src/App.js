@@ -10,6 +10,7 @@ import imageC from './assets/imageC.png';
 import imageD from './assets/imageD.png';
 import imageE from './assets/imageE.png';
 import imageF from './assets/imageF.png';
+import imageG from './assets/imageG.png';
 
 import resume from './assets/Baokhoa_Resume.pdf'
 
@@ -49,7 +50,7 @@ const Background = styled.div`
 const Container = styled.div`
     overflow: scroll;
     height: 100vh;
-    scroll-snap-type: y mandatory;
+    // scroll-snap-type: y mandatory;
     position: relative;
     z-index: 10;
     transition: 0.4s;
@@ -60,7 +61,7 @@ const Box = styled.div`
     width: 100vw;
     display: table;
     overflow: hidden;
-    scroll-snap-align: start;
+    // scroll-snap-align: start;
     
     &.whole {
         height: 100vh;
@@ -83,8 +84,8 @@ const Box = styled.div`
     }
 
     &.second > .a > .b {
-        // width: 90%;
-        // margin: 5% auto;
+        width: 90%;
+        margin: 5% auto;
     }
 
     &.third div div {
@@ -110,11 +111,11 @@ const Box = styled.div`
 const Scrollable = styled.div`
     // height: 100vh;
     overflow-y: auto;
-    scroll-snap-type: y mandatory;
+    // scroll-snap-type: y mandatory;
     transition: 0.4s;
 
     > div > div {
-        scroll-snap-align: start;
+        // scroll-snap-align: start;
     }
 
     > div > div > div:nth-child(1) {
@@ -189,7 +190,7 @@ const Bounce = styled.div`
 //     background-position: 50% 50%;
 // `
 const Image = styled.div`
-    height: 100vh;
+    height: 500px;
     width: 100%;    
     -webkit-transition: 0.4s;
     transition: 0.4s;
@@ -214,6 +215,14 @@ const Image = styled.div`
 
     &.d {
         background-image: url("${imageB}");
+    }
+
+    &.f {
+        background-image: url("${imageF}");
+    }
+
+    &.g {
+        background-image: url("${imageG}");
     }
 
     
@@ -247,9 +256,9 @@ export default class App extends Component {
                         <Box className="first whole">
                             <div>
                                 <div>
-                                    <p>B A O</p>
+                                    {/* <p>B A O</p>
                                     <p>Los Angeles</p>
-                                    <p>Full Stack Developer</p>
+                                    <p>Full Stack Developer</p> */}
                                     <Bounce className='bouncing'>V</Bounce>
                                 </div>
                             </div>
@@ -257,19 +266,22 @@ export default class App extends Component {
 
                         <Box className="second whole">
                             <div className="a">
-                                <div className="b">
+                                <div className="b">                                    
+
+                                    {/* React Homepage */}
                                     <Scrollable>
                                         <div>
                                             <div>
                                                 <div>
                                                     <div>
-                                                        <Image className="a"></Image>
+                                                        <Image className="f"></Image>
                                                     </div>
                                                 </div>
                                                 <div>
                                                     <div>
-                                                        <p>Ride To Conquer Cancer Toronto</p>
-                                                        <p>ReactJS, Redux, Blackbaud Luminate</p>
+                                                        <p>Poo</p>
+                                                        {/* <p>Ride To Conquer Cancer Toronto</p>
+                                                        <p>ReactJS, Blackbaud Luminate</p> */}
                                                         <p>
                                                             <a href="https://secure.conquercancer.ca/devReactBao">Link</a>
                                                         </p>
@@ -278,12 +290,102 @@ export default class App extends Component {
                                             </div>
                                         </div>
                                     </Scrollable>
+
+                                    {/* OCI */}
+                                    <Scrollable>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <Image className='b'></Image>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <p>Online Check In</p>
+                                                        <p>Angular 6, Typescript, Express, Blackbaud Luminate</p>
+                                                        <p>
+                                                            <a href="https://secure.conquercancer.ca/va19_dev/index.html#/step-01">Link</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Scrollable>
+                                    
+                                    {/* KOI */}
+                                    <Scrollable>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <Image className='c'></Image>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <p>KOI</p>
+                                                        <p>Angular 5, Express, Mongodb, Blackbaud Luminate</p>
+                                                        <p>
+                                                            <a href="https://cfkoi.herokuapp.com/">Link</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Scrollable>
+
+                                    {/* Weekend */}
+                                    <Scrollable>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <Image className='d'></Image>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <p>Weekend To Conquer Cancer</p>
+                                                        <p>Wordpress, jQuery, Blackbaud Luminate</p>
+                                                        <p>
+                                                            <a href="https://secure.weekendtoconquercancer.ca/site/SPageNavigator/to20_homepage">Link</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Scrollable>
+
+                                    {/* Ride Homepage */}
+                                    <Scrollable>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <Image className="g"></Image>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <p>Poo</p>
+                                                        {/* <p>Ride To Conquer Cancer Vancouver</p>
+                                                        <p>Wordpress, jQuery, Blackbaud Luminate</p> */}
+                                                        <p>
+                                                            <a href="https://secure.conquercancer.ca/vancouver20">Link</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Scrollable>
+
                                 </div>
                                 
                             </div>
                         </Box>
 
-                        <Box className="second whole">
+                        {/* <Box className="second whole">
                             <div className="a">
                                 <div className="b">
                                     <Scrollable>
@@ -362,7 +464,7 @@ export default class App extends Component {
                                     </Scrollable>
                                 </div>
                             </div>
-                        </Box>
+                        </Box> */}
 
                         <Box className="third whole">
                             <div>
