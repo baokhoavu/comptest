@@ -201,28 +201,34 @@ const Image = styled.div`
 
     &.a {
         background-image: url("${imageA}");
+        background-position-y: top;
     }
 
     &.b {
         background-image: url("${imageD}");
+        background-position-y: top;
         background-position-x: left;
     }
 
     &.c {
         background-image: url("${imageE}");
+        background-position-y: top;
         background-position-x: left;
     }
 
     &.d {
         background-image: url("${imageB}");
+        background-position-y: top;
     }
 
     &.f {
         background-image: url("${imageF}");
+        background-position-y: top;
     }
 
     &.g {
         background-image: url("${imageG}");
+        background-position-y: top;
     }
 
     
