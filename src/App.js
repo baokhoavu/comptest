@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import ParticleComponent from "./components/ParticleComponent";
-import Tree from "./components/Tree";
 import { bounce } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 import './App.css';
 import imageA from './assets/imageA.png';
 import imageB from './assets/imageB.png';
-import imageC from './assets/imageC.png';
 import imageD from './assets/imageD.png';
 import imageE from './assets/imageE.png';
 import imageF from './assets/imageF.png';
@@ -14,6 +12,8 @@ import imageG from './assets/imageG.png';
 
 import resume from './assets/Baokhoa_Resume.pdf'
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 const bounceAction = keyframes`${bounce}`;
 
@@ -270,11 +270,36 @@ export default class App extends Component {
                             </div>
                         </Box>
 
-                        <Box className="second whole">
+                        <Carousel>
+                            <div>
+                                <img src={imageA} />
+                                <p className="legend">Legend 1</p>
+                            </div>
+                            <div>
+                                <img src={imageD} />
+                                <p className="legend">Legend 2</p>
+                            </div>
+                            {/* <div>
+                                <img src={imageE} />
+                                <p className="legend">Legend 3</p>
+                            </div>
+                            <div>
+                                <img src={imageB} />
+                                <p className="legend">Legend 2</p>
+                            </div>
+                            <div>
+                                <img src={imageF} />
+                                <p className="legend">Legend 3</p>
+                            </div>
+                            <div>
+                                <img src={imageG} />
+                                <p className="legend">Legend 3</p>
+                            </div> */}
+                        </Carousel>
+
+                        {/* <Box className="second whole">
                             <div className="a">
                                 <div className="b">                                    
-
-                                    {/* React Homepage */}
                                     <Scrollable>
                                         <div>
                                             <div>
@@ -285,7 +310,6 @@ export default class App extends Component {
                                                 </div>
                                                 <div>
                                                     <div>
-                                                        {/* <p>Poo</p> */}
                                                         <p>Ride To Conquer Cancer Toronto</p>
                                                         <p>ReactJS, Styled Components, Blackbaud Luminate</p>
                                                         <p>
@@ -296,8 +320,6 @@ export default class App extends Component {
                                             </div>
                                         </div>
                                     </Scrollable>
-
-                                    {/* OCI */}
                                     <Scrollable>
                                         <div>
                                             <div>
@@ -318,8 +340,6 @@ export default class App extends Component {
                                             </div>
                                         </div>
                                     </Scrollable>
-                                    
-                                    {/* KOI */}
                                     <Scrollable>
                                         <div>
                                             <div>
@@ -340,8 +360,6 @@ export default class App extends Component {
                                             </div>
                                         </div>
                                     </Scrollable>
-
-                                    {/* Weekend */}
                                     <Scrollable>
                                         <div>
                                             <div>
@@ -362,8 +380,6 @@ export default class App extends Component {
                                             </div>
                                         </div>
                                     </Scrollable>
-
-                                    {/* Ride Homepage */}
                                     <Scrollable>
                                         <div>
                                             <div>
@@ -374,7 +390,6 @@ export default class App extends Component {
                                                 </div>
                                                 <div>
                                                     <div>
-                                                        {/* <p>Poo</p> */}
                                                         <p>Ride To Conquer Cancer Vancouver</p>
                                                         <p>Wordpress, jQuery, Blackbaud Luminate</p>
                                                         <p>
@@ -385,11 +400,29 @@ export default class App extends Component {
                                             </div>
                                         </div>
                                     </Scrollable>
-
+                                    <Scrollable>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <Image className="g"></Image>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <p>Ride To Conquer Cancer Vancouver</p>
+                                                        <p>Wordpress, jQuery, Blackbaud Luminate</p>
+                                                        <p>
+                                                            <a href="https://secure.conquercancer.ca/teamUpChallenge">Link</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Scrollable>
                                 </div>
-                                
                             </div>
-                        </Box>
+                        </Box> */}
 
                         {/* <Box className="second whole">
                             <div className="a">
